@@ -190,8 +190,12 @@ public class AboutActivity extends BasicActivity implements View.OnClickListener
         break;
 
       case R.id.relative_layout_changelog:
-        openURL(URL_REPO_CHANGELOG, this);
+        //openURL(URL_REPO_CHANGELOG, this);
+        Intent haha = new Intent(this,com.amaze.filemanager.SampleActivity.class);
+        startActivity(haha);
         break;
+
+
 
       case R.id.relative_layout_licenses:
         LibsBuilder libsBuilder =
