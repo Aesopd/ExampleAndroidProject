@@ -35,7 +35,7 @@
         tools:replace="android:label">
         <activity
             android:name=".SampleActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ui.activities.MainActivity"
             android:label="@string/appbar_name"
