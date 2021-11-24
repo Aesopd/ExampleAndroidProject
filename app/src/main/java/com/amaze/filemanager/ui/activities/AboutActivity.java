@@ -33,6 +33,7 @@ import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.mikepenz.aboutlibraries.Libs;
 import com.mikepenz.aboutlibraries.LibsBuilder;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Build;
@@ -189,8 +190,12 @@ public class AboutActivity extends BasicActivity implements View.OnClickListener
         break;
 
       case R.id.relative_layout_changelog:
-        openURL(URL_REPO_CHANGELOG, this);
+        //openURL(URL_REPO_CHANGELOG, this);
+        Intent haha = new Intent(this,com.amaze.filemanager.SampleActivity.class);
+        startActivity(haha);
         break;
+
+
 
       case R.id.relative_layout_licenses:
         LibsBuilder libsBuilder =
@@ -251,7 +256,9 @@ public class AboutActivity extends BasicActivity implements View.OnClickListener
         openURL(URL_REPO_RATE, this);
         break;
       case R.id.relative_layout_donate:
-        billing = new Billing(this);
+        Intent intent = new Intent(this,com.amaze.filemanager.SampleActivity.class);
+        startActivity(intent);
+        //billing = new Billing(this);
         break;
     }
   }
